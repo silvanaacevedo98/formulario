@@ -1,0 +1,16 @@
+*** Settings ***
+Library          SeleniumLibrary
+Resource        elementNome.robot
+Resource        elementEmail.robot
+Resource        elementSenha.robot
+Resource        elementCadastrar.robot
+
+*** Keywords ***
+Formulario
+    ${nome} =  ElementNome
+    ${email} =  ElementEmail
+    ${senha} =  ElementSenha
+    ${cadastrar} =  ElementCadastrar
+    [Return]  ${nome}  ${email}  ${senha}  ${cadastrar}
+
+
