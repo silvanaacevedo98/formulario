@@ -98,9 +98,9 @@ Suite Setup      Abrir el navegador
 Suite Teardown   Cerrar el navegador
 
 *** Variables ***
-${URL}           ruta_a_tu_formulario.html
-${BROWSER}       Chrome
-${DELAY}         2s
+${URL}           ruta_a_tu_formulario.html/&
+${BROWSER}       Chrome/&
+${DELAY}         2s/&
 
 *** Test Cases ***
 Llenar Formulario
